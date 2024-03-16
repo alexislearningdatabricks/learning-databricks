@@ -1,0 +1,13 @@
+
+terraform-learningdatabricks/main.auto.tfvars
+terraform-learningdatabricks/.terraform.lock.hcl
+terraform-learningdatabricks/.terraform/providers/registry.terraform.io/databricks/databricks/1.38.0/darwin_arm64/CHANGELOG.md
+terraform-learningdatabricks/.terraform/providers/registry.terraform.io/databricks/databricks/1.38.0/darwin_arm64/LICENSE
+terraform-learningdatabricks/.terraform/providers/registry.terraform.io/databricks/databricks/1.38.0/darwin_arm64/NOTICE
+terraform-learningdatabricks/.terraform/providers/registry.terraform.io/databricks/databricks/1.38.0/darwin_arm64/terraform-provider-databricks_v1.38.0
+terraform-learningdatabricks/.terraform/providers/registry.terraform.io/hashicorp/aws/3.49.0/darwin_arm64/terraform-provider-aws_v3.49.0_x5
+terraform-learningdatabricks/.terraform/providers/registry.terraform.io/hashicorp/aws/3.76.1/darwin_arm64/terraform-provider-aws_v3.76.1_x5
+terraform-learningdatabricks/.terraform/providers/registry.terraform.io/hashicorp/aws/5.41.0/darwin_arm64/terraform-provider-aws_v5.41.0_x5
+terraform-learningdatabricks/.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5
+terraform-learningdatabricks/terraform.tfstate
+terraform-learningdatabricks/terraform.tfstate.backup
