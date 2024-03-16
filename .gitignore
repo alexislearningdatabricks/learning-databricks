@@ -11,3 +11,4 @@ terraform-learningdatabricks/.terraform/providers/registry.terraform.io/hashicor
 terraform-learningdatabricks/.terraform/providers/registry.terraform.io/hashicorp/random/3.6.0/darwin_arm64/terraform-provider-random_v3.6.0_x5
 terraform-learningdatabricks/terraform.tfstate
 terraform-learningdatabricks/terraform.tfstate.backup
+terraform-learningdatabricks/__pycache__/print_test.cpython-39-pytest-8.1.1.pyc
