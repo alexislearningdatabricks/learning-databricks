@@ -72,7 +72,8 @@ jobs:
       TF_VAR_unity_admin_group: ${{ secrets.UNITY_ADMIN_GROUP }}
       TF_VAR_workspace_service_user_client_id: ${{ secrets.DATABRICKS_TERRAFORM_WORKSPACE_CLIENT_ID }}
       TF_VAR_workspace_service_user_client_secret: ${{ secrets.DATABRICKS_TERRAFORM_WORKSPACE_SECRET }}
-      TF_VAR_workspace_service_user_id: ${{ secrets.CLUSTER_SINGLE_USER }}
+      TF_VAR_workspace_service_user_id: ${{ secrets.WORKSPACE_SERVICE_USER_ID }}
+      TF_VAR_cluster_single_user: ${{ secrets.CLUSTER_SINGLE_USER }}
 
     steps:
     # Checkout the repository to the GitHub Actions runner
