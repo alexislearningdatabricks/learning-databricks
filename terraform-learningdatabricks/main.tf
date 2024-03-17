@@ -4,7 +4,7 @@ terraform {
       source = "databricks/databricks"
     }
     aws = {
-      source  = "hashicorp/aws"
+      source = "hashicorp/aws"
     }
   }
 }
@@ -65,7 +65,7 @@ locals {
 }
 
 provider "aws" {
-    region = var.region
+  region = var.region
 }
 resource "aws_s3_bucket" "learning_bucket" {
   bucket = "${local.prefix}-alexis-learning-databricks"
@@ -83,14 +83,14 @@ resource "aws_s3_bucket_versioning" "learning_bucket_versioning" {
 
 
 provider "databricks" {
-    alias = "mws"
-    account_id = var.databricks_account_id
+  alias      = "mws"
+  account_id = var.databricks_account_id
 }
 
 provider "databricks" {
-  alias    = "workspace"
-  host     = var.databricks_workspace_url
-  client_id = var.workspace_service_user_client_id
+  alias         = "workspace"
+  host          = var.databricks_workspace_url
+  client_id     = var.workspace_service_user_client_id
   client_secret = var.workspace_service_user_client_secret
 }
 
