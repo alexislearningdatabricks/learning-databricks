@@ -14,6 +14,11 @@ variable "databricks_account_id" {}
 variable "workspace_service_user_client_id" {}
 variable "workspace_service_user_client_secret" {}
 variable "workspace_service_user_id" {}
+variable "aws_access_key_id" {}
+variable "aws_secret_access_key" {}
+variable "databricks_terraform_account_client_id" {}
+variable "databricks_terraform_account_secret" {}
+
 variable "tags" {
   default = {}
 }
@@ -66,6 +71,8 @@ locals {
 
 provider "aws" {
   region = var.region
+  access_key = var.aws_access_key_id
+  secret_key = var.aws_secret_access_key
 }
 resource "aws_s3_bucket" "learning_bucket" {
   bucket = "${local.prefix}-alexis-learning-databricks"
@@ -85,6 +92,8 @@ resource "aws_s3_bucket_versioning" "learning_bucket_versioning" {
 provider "databricks" {
   alias      = "mws"
   account_id = var.databricks_account_id
+  client_id = var.databricks_terraform_account_client_id
+  client_secret = var.databricks_terraform_account_secret
 }
 
 provider "databricks" {
