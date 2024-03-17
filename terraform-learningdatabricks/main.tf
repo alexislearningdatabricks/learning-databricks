@@ -7,6 +7,12 @@ terraform {
       source = "hashicorp/aws"
     }
   }
+  backend "s3" {
+    bucket  = "alexis-learning-terraform-state"
+    key     = "state/terraform.tfstate"
+    region  = "ca-central-1"
+    encrypt = true
+  }
 }
 
 variable "databricks_workspace_url" {}
