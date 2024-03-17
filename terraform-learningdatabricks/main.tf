@@ -70,7 +70,7 @@ locals {
 }
 
 provider "aws" {
-  region = var.region
+  region     = var.region
   access_key = var.aws_access_key_id
   secret_key = var.aws_secret_access_key
 }
@@ -90,9 +90,9 @@ resource "aws_s3_bucket_versioning" "learning_bucket_versioning" {
 
 
 provider "databricks" {
-  alias      = "mws"
-  account_id = var.databricks_account_id
-  client_id = var.databricks_terraform_account_client_id
+  alias         = "mws"
+  account_id    = var.databricks_account_id
+  client_id     = var.databricks_terraform_account_client_id
   client_secret = var.databricks_terraform_account_secret
 }
 
