@@ -92,6 +92,7 @@ resource "aws_s3_bucket_versioning" "learning_bucket_versioning" {
 provider "databricks" {
   alias         = "mws"
   account_id    = var.databricks_account_id
+  host          = "https://accounts.cloud.databricks.com"
   client_id     = var.databricks_terraform_account_client_id
   client_secret = var.databricks_terraform_account_secret
 }
