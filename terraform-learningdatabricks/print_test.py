@@ -4,3 +4,7 @@ print("a")
 # COMMAND ----------
 
 print("b")
+
+# COMMAND ----------
+
+print("c")
